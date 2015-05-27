@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="win32">
+      <UniqueIdentifier>{84a8ebd7-7cf0-47f6-b75e-d441df67da40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{715254bc-d70b-4ec5-bf29-467dd3ace079}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Base">
+      <UniqueIdentifier>{f6595d0b-9af6-42a0-9cc0-6a14120d45df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Effect">
+      <UniqueIdentifier>{b664da49-1c8c-4174-b378-f7846be75b1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Manager">
+      <UniqueIdentifier>{1430c143-d3dc-49b2-aeba-76aba680d1c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Scene">
+      <UniqueIdentifier>{2c8a5d99-008c-452e-ad34-5bca840cd415}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Singleton">
+      <UniqueIdentifier>{c121474b-800e-4b3e-ae7b-6c0b11a4f9df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Skill">
+      <UniqueIdentifier>{07673c61-c68b-4080-b895-695ac6d9cecb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Sneaky">
+      <UniqueIdentifier>{46493d26-2ba3-4e4d-a141-e677b6bd27de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Base\Item">
+      <UniqueIdentifier>{6c6f6ce8-ada2-4d17-80f9-5762ea008d91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Base\Role">
+      <UniqueIdentifier>{ff468bdb-7ad7-4dea-bd9f-761101be9e6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Common">
+      <UniqueIdentifier>{fb45cf6a-2eb0-4eec-8066-91e6ae8f5213}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Functions">
+      <UniqueIdentifier>{5f4195fa-890b-471b-9485-bedef1e337a9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameRoot.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Base\Item\Armor.cpp">
+      <Filter>src\Base\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Base\Item\Equip.cpp">
+      <Filter>src\Base\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Base\Item\Item.cpp">
+      <Filter>src\Base\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Base\Item\Weapon.cpp">
+      <Filter>src\Base\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Base\Role\Hero.cpp">
+      <Filter>src\Base\Role</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Base\Role\Mercenary.cpp">
+      <Filter>src\Base\Role</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Base\Role\Role.cpp">
+      <Filter>src\Base\Role</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Effect\AnimateSprite.cpp">
+      <Filter>src\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Effect\Skill.cpp">
+      <Filter>src\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Manager\AnimationManager.cpp">
+      <Filter>src\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Manager\BaseManager.cpp">
+      <Filter>src\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Manager\ConfigManager.cpp">
+      <Filter>src\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Manager\RoleManager.cpp">
+      <Filter>src\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scene\GameLayer.cpp">
+      <Filter>src\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scene\GameMap.cpp">
+      <Filter>src\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scene\HudLayer.cpp">
+      <Filter>src\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scene\SceneGame.cpp">
+      <Filter>src\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Sneaky\SneakyButton.cpp">
+      <Filter>src\Sneaky</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Sneaky\SneakyButtonSkinnedBase.cpp">
+      <Filter>src\Sneaky</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Sneaky\SneakyJoystick.cpp">
+      <Filter>src\Sneaky</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Sneaky\SneakyJoystickSkinnedBase.cpp">
+      <Filter>src\Sneaky</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Functions\Functions.cpp">
+      <Filter>src\Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Manager\AIManager.cpp">
+      <Filter>src\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Manager\BufferManager.cpp">
+      <Filter>src\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Base\Role\Player.cpp">
+      <Filter>src\Base\Role</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameRoot.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Base\Item\Armor.h">
+      <Filter>src\Base\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Base\Item\Equip.h">
+      <Filter>src\Base\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Base\Item\Item.h">
+      <Filter>src\Base\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Base\Item\Weapon.h">
+      <Filter>src\Base\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Base\Role\Hero.h">
+      <Filter>src\Base\Role</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Base\Role\Mercenary.h">
+      <Filter>src\Base\Role</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Base\Role\Role.h">
+      <Filter>src\Base\Role</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Common\Common.h">
+      <Filter>src\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Common\Contants.h">
+      <Filter>src\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Common\EnumType.h">
+      <Filter>src\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Common\Macros.h">
+      <Filter>src\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Common\TypeDefine.h">
+      <Filter>src\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Effect\AnimateSprite.h">
+      <Filter>src\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Effect\Skill.h">
+      <Filter>src\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Manager\AnimationManager.h">
+      <Filter>src\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Manager\BaseManager.h">
+      <Filter>src\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Manager\ConfigManager.h">
+      <Filter>src\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Manager\RoleManager.h">
+      <Filter>src\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene\GameLayer.h">
+      <Filter>src\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene\GameMap.h">
+      <Filter>src\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene\HudLayer.h">
+      <Filter>src\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene\SceneGame.h">
+      <Filter>src\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Sneaky\SneakyButton.h">
+      <Filter>src\Sneaky</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Sneaky\SneakyButtonSkinnedBase.h">
+      <Filter>src\Sneaky</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Sneaky\SneakyJoystick.h">
+      <Filter>src\Sneaky</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Sneaky\SneakyJoystickSkinnedBase.h">
+      <Filter>src\Sneaky</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Functions\Functions.h">
+      <Filter>src\Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Common\DebugHelper.h">
+      <Filter>src\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Manager\AIManager.h">
+      <Filter>src\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Manager\BufferManager.h">
+      <Filter>src\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Base\Role\Player.h">
+      <Filter>src\Base\Role</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

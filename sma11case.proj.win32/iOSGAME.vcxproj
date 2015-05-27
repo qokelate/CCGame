@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{76A39BB2-9B84-4C65-98A5-654D86B86F2A}</ProjectGuid>
+    <RootNamespace>test_win32</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+    <Import Project="$(COCOS_FRAMEWORKS)\cocos2d-x-3.6\\cocos\2d\cocos2dx.props" />
+    <Import Project="$(COCOS_FRAMEWORKS)\cocos2d-x-3.6\\cocos\2d\cocos2d_headers.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+    <Import Project="$(COCOS_FRAMEWORKS)\cocos2d-x-3.6\\cocos\2d\cocos2dx.props" />
+    <Import Project="$(COCOS_FRAMEWORKS)\cocos2d-x-3.6\\cocos\2d\cocos2d_headers.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+    <IntDir>..\Compiled\$(Configuration).win32\</IntDir>
+    <OutDir>$(SolutionDir)/../Compiled/</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+    <IntDir>..\Compiled\$(Configuration).win32\</IntDir>
+    <OutDir>$(SolutionDir)/../Compiled/</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(COCOS_FRAMEWORKS)\cocos2d-x-3.6\cocos\audio\include;$(COCOS_FRAMEWORKS)\cocos2d-x-3.6\external;$(COCOS_FRAMEWORKS)\cocos2d-x-3.6\external\chipmunk\include\chipmunk;$(COCOS_FRAMEWORKS)\cocos2d-x-3.6\extensions;..\Classes;..;%(AdditionalIncludeDirectories);$(_COCOS_HEADER_WIN32_BEGIN);$(_COCOS_HEADER_WIN32_END)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;COCOS2D_DEBUG=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies);$(_COCOS_LIB_WIN32_BEGIN);$(_COCOS_LIB_WIN32_END)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\Compiled\$(Configuration).win32;%(AdditionalLibraryDirectories);$(_COCOS_LIB_PATH_WIN32_BEGIN);$(_COCOS_LIB_PATH_WIN32_END)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreLinkEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(COCOS_FRAMEWORKS)\cocos2d-x-3.6\cocos\audio\include;$(COCOS_FRAMEWORKS)\cocos2d-x-3.6\external;$(COCOS_FRAMEWORKS)\cocos2d-x-3.6\external\chipmunk\include\chipmunk;$(COCOS_FRAMEWORKS)\cocos2d-x-3.6\extensions;..\Classes;..;%(AdditionalIncludeDirectories);$(_COCOS_HEADER_WIN32_BEGIN);$(_COCOS_HEADER_WIN32_END)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USE_MATH_DEFINES;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libcurl_imp.lib;websockets.lib;%(AdditionalDependencies);$(_COCOS_LIB_WIN32_BEGIN);$(_COCOS_LIB_WIN32_END)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\Compiled\$(Configuration).win32;%(AdditionalLibraryDirectories);$(_COCOS_LIB_PATH_WIN32_BEGIN);$(_COCOS_LIB_PATH_WIN32_END)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>if not exist "$(OutDir)" mkdir "$(OutDir)"
+xcopy /Y /Q "$(COCOS_FRAMEWORKS)\cocos2d-x-3.6\prebuilt\win32\*.*" "$(OutDir)"
+xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
+</Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Classes\AppDelegate.cpp" />
+    <ClCompile Include="..\Classes\Base\Item\Armor.cpp" />
+    <ClCompile Include="..\Classes\Base\Item\Equip.cpp" />
+    <ClCompile Include="..\Classes\Base\Item\Item.cpp" />
+    <ClCompile Include="..\Classes\Base\Item\Weapon.cpp" />
+    <ClCompile Include="..\Classes\Base\Role\Hero.cpp" />
+    <ClCompile Include="..\Classes\Base\Role\Mercenary.cpp" />
+    <ClCompile Include="..\Classes\Base\Role\Player.cpp" />
+    <ClCompile Include="..\Classes\Base\Role\Role.cpp" />
+    <ClCompile Include="..\Classes\Effect\AnimateSprite.cpp" />
+    <ClCompile Include="..\Classes\Effect\Skill.cpp" />
+    <ClCompile Include="..\Classes\Functions\Functions.cpp" />
+    <ClCompile Include="..\Classes\GameRoot.cpp" />
+    <ClCompile Include="..\Classes\Manager\AIManager.cpp" />
+    <ClCompile Include="..\Classes\Manager\AnimationManager.cpp" />
+    <ClCompile Include="..\Classes\Manager\BaseManager.cpp" />
+    <ClCompile Include="..\Classes\Manager\BufferManager.cpp" />
+    <ClCompile Include="..\Classes\Manager\ConfigManager.cpp" />
+    <ClCompile Include="..\Classes\Manager\RoleManager.cpp" />
+    <ClCompile Include="..\Classes\Scene\GameLayer.cpp" />
+    <ClCompile Include="..\Classes\Scene\GameMap.cpp" />
+    <ClCompile Include="..\Classes\Scene\HudLayer.cpp" />
+    <ClCompile Include="..\Classes\Scene\SceneGame.cpp" />
+    <ClCompile Include="..\Classes\Sneaky\SneakyButton.cpp" />
+    <ClCompile Include="..\Classes\Sneaky\SneakyButtonSkinnedBase.cpp" />
+    <ClCompile Include="..\Classes\Sneaky\SneakyJoystick.cpp" />
+    <ClCompile Include="..\Classes\Sneaky\SneakyJoystickSkinnedBase.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\AppDelegate.h" />
+    <ClInclude Include="..\Classes\Base\Item\Armor.h" />
+    <ClInclude Include="..\Classes\Base\Item\Equip.h" />
+    <ClInclude Include="..\Classes\Base\Item\Item.h" />
+    <ClInclude Include="..\Classes\Base\Item\Weapon.h" />
+    <ClInclude Include="..\Classes\Base\Role\Hero.h" />
+    <ClInclude Include="..\Classes\Base\Role\Mercenary.h" />
+    <ClInclude Include="..\Classes\Base\Role\Player.h" />
+    <ClInclude Include="..\Classes\Base\Role\Role.h" />
+    <ClInclude Include="..\Classes\Common\Common.h" />
+    <ClInclude Include="..\Classes\Common\Contants.h" />
+    <ClInclude Include="..\Classes\Common\DebugHelper.h" />
+    <ClInclude Include="..\Classes\Common\EnumType.h" />
+    <ClInclude Include="..\Classes\Common\Macros.h" />
+    <ClInclude Include="..\Classes\Common\TypeDefine.h" />
+    <ClInclude Include="..\Classes\Effect\AnimateSprite.h" />
+    <ClInclude Include="..\Classes\Effect\Skill.h" />
+    <ClInclude Include="..\Classes\Functions\Functions.h" />
+    <ClInclude Include="..\Classes\GameRoot.h" />
+    <ClInclude Include="..\Classes\Manager\AIManager.h" />
+    <ClInclude Include="..\Classes\Manager\AnimationManager.h" />
+    <ClInclude Include="..\Classes\Manager\BaseManager.h" />
+    <ClInclude Include="..\Classes\Manager\BufferManager.h" />
+    <ClInclude Include="..\Classes\Manager\ConfigManager.h" />
+    <ClInclude Include="..\Classes\Manager\RoleManager.h" />
+    <ClInclude Include="..\Classes\Scene\GameLayer.h" />
+    <ClInclude Include="..\Classes\Scene\GameMap.h" />
+    <ClInclude Include="..\Classes\Scene\HudLayer.h" />
+    <ClInclude Include="..\Classes\Scene\SceneGame.h" />
+    <ClInclude Include="..\Classes\Sneaky\SneakyButton.h" />
+    <ClInclude Include="..\Classes\Sneaky\SneakyButtonSkinnedBase.h" />
+    <ClInclude Include="..\Classes\Sneaky\SneakyJoystick.h" />
+    <ClInclude Include="..\Classes\Sneaky\SneakyJoystickSkinnedBase.h" />
+    <ClInclude Include="main.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
